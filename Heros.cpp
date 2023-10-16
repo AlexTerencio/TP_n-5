@@ -32,6 +32,7 @@ Heros::Heros(string nomheros, int vieheros, string nomarme, int puissancearme) /
 
 void Heros::afficher() const // Méthode pour afficher les informations du héros
 {
+    cout << "______________________" << endl;
     cout << "Héros : " << m_nomheros << "\tVie : " << m_vieheros << endl;
     cout << "Arme : " << m_nomarme << "\tPuissance de l'Arme : " << m_puissancearme << endl;
     if (vivant() == true)
@@ -39,4 +40,17 @@ void Heros::afficher() const // Méthode pour afficher les informations du héro
 else
     cout << "Héros Mort" << endl;
 cout << "---------------------------------" << endl;
+}
+
+void Heros::afficherHeros(Heros &cible1, Heros &cible2, Heros &cible3, Heros &cible4, Heros &cible5, Heros &cible6, Heros &cible7, Heros &cible8)
+{
+    cout << "Voici les informations de 8 Heros :" << endl;
+    cible1.afficher();
+    cible2.afficher();
+    cible3.afficher();
+    cible4.afficher();
+    cible5.afficher();
+    cible6.afficher();
+    cible7.afficher();
+    cible8.afficher();
 }
