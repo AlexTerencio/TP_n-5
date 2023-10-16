@@ -54,3 +54,14 @@ void Heros::afficherHeros(Heros &cible1, Heros &cible2, Heros &cible3, Heros &ci
     cible7.afficher();
     cible8.afficher();
 }
+
+void Heros::volerArme(Heros &cible)
+{
+    cout << m_nomheros << " vole l'arme de " << cible.m_nomheros << endl;
+
+    m_nomarme = cible.m_nomarme;
+    m_puissancearme = cible.m_puissancearme;
+
+    cible.m_nomarme = "Pas d'arme";
+    cible.m_puissancearme = 0;
+}

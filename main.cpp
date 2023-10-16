@@ -37,6 +37,17 @@ int main(){
     solo.attaquer(palpatine);
     r2d2.attaquer(vador);
     c3po.attaquer(palpatine);
+    cout << endl;
+
+    yoda.volerArme(vador);
+    luke.volerArme(palpatine);
+    palpatine.volerArme(luke);
+    vador.volerArme(yoda);
+    palpatine.volerArme(leia);
+    vador.volerArme(solo);
+    palpatine.volerArme(r2d2);
+    vador.volerArme(c3po);
+    cout << endl;
 
     palpatine.utiliserLeCoteObscur(luke);
     vador.utiliserLeCoteObscur(yoda);
